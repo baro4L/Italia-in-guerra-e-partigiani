@@ -275,7 +275,7 @@ a:hover {
         font-size: 1.8em;
     }
     .barra-navigazione{
-        position: relative;
+        position: static;
     }
     .immagine-contenitore img{
         max-width: 300px;
