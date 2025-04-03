@@ -56,7 +56,7 @@ body {
 }
 
 /* Stili comuni per tutte le sezioni principali */
-.sezione-armistizio, .sezione-repubblica, .sezione-resistenza, .sezione-vita-quotidiana, .sezione-propaganda {
+.sezione-armistizio, .sezione-repubblica, .sezione-resistenza, .sezione-cln, .sezione-persecuzione, .sezione-repubbliche, .sezione-vita-quotidiana, .sezione-propaganda {
     background: white;
     border-radius: 5px;
     padding: 30px;
@@ -64,19 +64,60 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.sezione-armistizio h2, .sezione-repubblica h2, .sezione-resistenza h2, .sezione-vita-quotidiana h2, .sezione-propaganda h2 {
+.sezione-armistizio h2, .sezione-repubblica h2, .sezione-resistenza h2, .sezione-cln h2, .sezione-persecuzione h2, .sezione-repubbliche h2, .sezione-vita-quotidiana h2, .sezione-propaganda h2 {
     color: #c00;
     border-bottom: 2px solid #c00;
     padding-bottom: 10px;
     margin-top: 0;
 }
 
-.contenitore-armistizio, .contenitore-repubblica, .contenitore-resistenza {
+.contenitore-armistizio, .contenitore-repubblica, .contenitore-resistenza, .contenitore-cln, .contenitore-persecuzione, .contenitore-repubbliche {
     margin-bottom: 30px;
 }
 
-.contenitore-armistizio p, .contenitore-repubblica p, .contenitore-resistenza p, .contenitore-vita-quotidiana p {
+.contenitore-armistizio p, .contenitore-repubblica p, .contenitore-resistenza p, .contenitore-cln p, .contenitore-persecuzione p, .contenitore-repubbliche p, .contenitore-vita-quotidiana p {
     text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Stili per le immagini e didascalie */
+.immagine-contenitore {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.immagine-contenitore img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.immagine-contenitore p{
+    text-align: center;
+}
+
+.didascalia {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 8px;
+    
+}
+
+/* Stili per elenchi */
+ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Stili per i titoli h3 */
+h3 {
+    color: #c00;
+    margin-top: 25px;
     margin-bottom: 15px;
 }
 
@@ -184,6 +225,17 @@ a:hover {
     text-decoration: underline;
 }
 
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
     .barra-navigazione {
@@ -205,7 +257,7 @@ a:hover {
         padding: 10px;
     }
 
-    .sezione-armistizio, .sezione-repubblica, .sezione-resistenza, .sezione-vita-quotidiana, .sezione-propaganda, .sezione-titolo {
+    .sezione-armistizio, .sezione-repubblica, .sezione-resistenza, .sezione-cln, .sezione-persecuzione, .sezione-repubbliche, .sezione-vita-quotidiana, .sezione-propaganda, .sezione-titolo {
         padding: 15px;
     }
 
