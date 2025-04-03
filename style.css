@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.barra-navigazione {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.barra-navigazione a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.barra-navigazione a:hover {
+    background-color: #555;
+}
+
+.contenitore-principale {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sezione titolo */
+.sezione-titolo {
+    text-align: center;
+    padding: 40px 0;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sezione-titolo h2 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #c00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Stili comuni per tutte le sezioni principali */
+.sezione-armistizio, .sezione-repubblica, .sezione-resistenza, .sezione-vita-quotidiana, .sezione-propaganda {
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sezione-armistizio h2, .sezione-repubblica h2, .sezione-resistenza h2, .sezione-vita-quotidiana h2, .sezione-propaganda h2 {
+    color: #c00;
+    border-bottom: 2px solid #c00;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.contenitore-armistizio, .contenitore-repubblica, .contenitore-resistenza {
+    margin-bottom: 30px;
+}
+
+.contenitore-armistizio p, .contenitore-repubblica p, .contenitore-resistenza p, .contenitore-vita-quotidiana p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Sezione vita quotidiana */
+.contenitore-vita-quotidiana {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contenitore-vita-quotidiana h3 {
+    color: #c00;
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Contenitori e schede */
+.contenitori-link {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.scheda-contenitore {
+    margin-bottom: 30px;
+    width: 30%;
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.scheda-contenitore:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.scheda-contenitore h3, .scheda-contenitore h4 {
+    color: #c00;
+    margin-top: 0;
+}
+
+.scheda-contenitore img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.scheda-contenitore p {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+/* Sezione manifestazioni */
+.contenitore-manifestazioni {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contenitore-manifestazioni h3 {
+    color: #c00;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+hr {
+    padding: 2px;
+    background-color: rgb(192, 192, 192);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #c00;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #900;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .barra-navigazione {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .barra-navigazione a {
+        display: block;
+        margin: 8px 0;
+        padding: 8px 15px;
+        width: 80%;
+    }
+
+    .contenitore-principale {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .sezione-armistizio, .sezione-repubblica, .sezione-resistenza, .sezione-vita-quotidiana, .sezione-propaganda, .sezione-titolo {
+        padding: 15px;
+    }
+
+    .contenitori-link {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scheda-contenitore {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .sezione-titolo h2 {
+        font-size: 1.8em;
+    }
+}
