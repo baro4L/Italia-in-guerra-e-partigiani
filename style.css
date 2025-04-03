@@ -87,7 +87,7 @@ body {
 }
 
 .immagine-contenitore img {
-    max-width: 100%;
+    max-width: 650px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
@@ -273,5 +273,11 @@ a:hover {
     
     .sezione-titolo h2 {
         font-size: 1.8em;
+    }
+    .barra-navigazione{
+        position: relative;
+    }
+    .immagine-contenitore img{
+        max-width: 300px;
     }
 }
